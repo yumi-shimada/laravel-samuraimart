@@ -2,6 +2,7 @@
 
 use Illuminate\Routing\Router;
 use App\Admin\Controllers\CategoryController;
+use App\Admin\Controllers\MajorCategoryController;
 use App\Admin\Controllers\ProductController;
 use App\Admin\Controllers\UserController;
 use App\Admin\Controllers\ShoppingCartController;
