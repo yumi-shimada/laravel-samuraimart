@@ -28,7 +28,7 @@
         </div>
 
         <div class="form-group d-flex justify-content-center">
-            <button type="ubmit" cass="btn btn-danger w-25">パスワード更新</button>
+            <button type="submit" cass="btn btn-danger w-25">パスワード更新</button>
         </div>
         </form> 
     </div>

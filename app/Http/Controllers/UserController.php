@@ -40,12 +40,15 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
+        $user = Auth::user();
         $user->name = $request->input('name')? $request->input('name') : $user->name;
         $user->email = $request->input('email')? $request->input('email') : $user->email;
         $user->password = $request->input('password')? $request->input('password') : $user->password;
         $user->postal_code = $request->input('postal_code')? $request->input('postal_code') : $user->postal_code;
         $user->address = $request->input('address')? $request->input('address') : $user->address;
         $user->phone = $request->input('phone')? $request->input('phone') : $user->phone;
+        
+        $user->update();
 
         return to_route('mypage');
     }
